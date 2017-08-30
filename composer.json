@@ -1,0 +1,19 @@
+{
+  "name": "duvarov/sitemap",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Dmitry Uvarov",
+      "email": "d.uvarov85@yandex.ru"
+    }
+  ],
+  "license": "MIT",
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "require": {
+    "php" : "^7.0"
+  }
+}
