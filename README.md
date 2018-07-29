@@ -1,24 +1,22 @@
-# Sitemap
+Sitemap
+===================
+
+Simple sitemap generator for php
 
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-Add to the `require` section of your `composer.json` file.
+```
+composer require d-uvarov/sitemap
+```
+
+or add to the `require` section of your `composer.json` file.
 
 ```
-"duvarov/sitemap": "0.*"
+"d-uvarov/sitemap": "0.*"
 ```
-and
 
-```
-"repositories":[
-    {
-        "type": "vcs",
-        "url": "https://github.com/d-uvarov/sitemap"
-    }
-]
-```
 
 ## Quick start
 
