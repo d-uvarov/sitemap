@@ -1,6 +1,6 @@
 <?php
 
-namespace duvarov;
+namespace d_uvarov;
 
 use XMLWriter;
 
@@ -22,6 +22,9 @@ use XMLWriter;
  */
 class Sitemap
 {
+    const XMLNS     = 'xmlns';
+    const XMLNS_VAL = 'http://www.sitemaps.org/schemas/sitemap/0.9';
+
     const CHANGEFREQ_ALWAYS  = 'always';
     const CHANGEFREQ_HOURLY  = 'hourly';
     const CHANGEFREQ_DAILY   = 'daily';
@@ -143,7 +146,7 @@ class Sitemap
         }
 
         $this->writer->startElement('urlset');
-        $this->writer->writeAttribute('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9');
+        $this->writer->writeAttribute(self::XMLNS, self::XMLNS_VAL);
     }
 
     /**
@@ -167,7 +170,7 @@ class Sitemap
 
         $writer = $this->getXmlWriter();
         $writer->startElement('sitemapindex');
-        $writer->writeAttribute('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9');
+        $writer->writeAttribute(self::XMLNS, self::XMLNS_VAL);
 
         if ($this->gzipped) {
             foreach ($this->getSitemapFilePaths() as $path) {
